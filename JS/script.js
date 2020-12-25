@@ -28,7 +28,10 @@ $(document).ready(function() {
             938:{
                 items:4
             }
-        }
+        },
+        autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
     })
 
     var skillsTopOffset = $(".skillSection").offset().top;
@@ -108,4 +111,5 @@ $(document).ready(function() {
 	}
     
 
+    
 });
