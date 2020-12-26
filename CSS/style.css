@@ -249,29 +249,28 @@ body {
 }
 
 .owl-prev {
-    width: 25px;
+    width: 30%;
     height: 100px;
-    position: absolute;
-    top: 30%;
-    margin-left: -20px;
-    display: block !important;
-    border:0px solid black;
 }
 
 .owl-next {
-    width: 25px;
+    width: 30%;
     height: 100px;
-    position: absolute;
-    top: 30%;
-    right: -25px;
-    display: block !important;
-    border:0px solid black;
 }
+.owl-nav button {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.owl-nav {
+    text-align: center;
+}
+
 .owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
 
 #navigation {
 	background-color: #e6dcd8;
-    padding: 20px 10px;
+    padding: 20px 0;
     z-index: 100;
     width: 100%;
 }
