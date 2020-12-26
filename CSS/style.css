@@ -110,7 +110,7 @@ body {
 
 #contact button {
     width: 30%;
-    line-height: 60px;
+    line-height: 40px;
     font-size: bold;
     margin-top: 3%;
     background-color: #ad9f8a;
@@ -158,6 +158,11 @@ body {
     text-align: center;
     width: 100%;
 }
+
+#filters {
+    padding: 0;
+}
+
 .heading{
     text-align: center;
     width: 100%;
@@ -285,7 +290,8 @@ body {
 
 .navbar-brand,
 .navbar-brand:hover {
-	color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding-left: 10px
 }
 
 .navbar-toggler-icon {
@@ -349,5 +355,23 @@ body {
     .slides-navigation .prev, .slides-navigation .next{
     width: 20px;
     height: 20px;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .name {
+        margin: 12px 0;
+    }
+    #contact button {
+        width: 80%;
+        line-height: 30px;
+        font-size: bold;
+        margin-top: 3%;
+        background-color: #ad9f8a;
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 15px 30px;
+    }
 }
