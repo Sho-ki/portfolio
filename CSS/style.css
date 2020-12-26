@@ -233,15 +233,13 @@ body {
     opacity: 1;
 }
 
-.items .openButton {
-    
+.items .openButton {  
     float: left;
-    left: -200px;
+    left: -400px;
 }
 .items .projectLink {
-   
     float: right;
-    right: -200px;
+    right: -400px;
 }
 .items .item:hover .openButton {
     left: 0px;
@@ -339,7 +337,7 @@ body {
     }
     }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 480px) {
     .slides-navigation a.prev {
         left: 20px;
         top: 50px;
