@@ -106,40 +106,6 @@ body {
     content:'%';
 }
 
-@media screen and (min-width: 1080px) {
-.myImage::before{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    right: 0px;
-    width: 90%;
-    height: 100%;
-    background-image: 
-        radial-gradient(#999 30%, transparent 31%),
-        radial-gradient(#999 30%, transparent 31%);
-    background-size: 6px 6px;
-    background-position: 0 0, 3px 3px;
-    z-index: -1;;
-}
-.name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.name::before, .name::after{
-    content: '';
-    width: 100px;
-    height: 1px;
-    background-color: black;
-}
-.name::before{
-    margin-right: 20px;
-}
-.name::after{
-    margin-left: 20px;
-}
-}
-
 #contact button {
     width: 30%;
     line-height: 60px;
@@ -152,8 +118,8 @@ body {
     border-radius: 20px;
 }
 #contact button:hover{
-    background-color: #ad9f8a;
-    color: rgba(224, 224, 224, 0.637);
+    background-color:#eeeae4;
+    color: #ad9f8a;
 }
 #contact h2{
     display: flex;
@@ -282,6 +248,27 @@ body {
     right: 0px;
 }
 
+.owl-prev {
+    width: 25px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    margin-left: -20px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 25px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+
 #navigation {
 	background-color: #e6dcd8;
     padding: 20px 10px;
@@ -315,3 +302,37 @@ body {
 .itemTitle {
     text-align: center;
 }
+
+@media screen and (min-width: 1080px) {
+    .myImage::before{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        right: 0px;
+        width: 90%;
+        height: 100%;
+        background-image: 
+            radial-gradient(#999 30%, transparent 31%),
+            radial-gradient(#999 30%, transparent 31%);
+        background-size: 6px 6px;
+        background-position: 0 0, 3px 3px;
+        z-index: -1;;
+    }
+    .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .name::before, .name::after{
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: black;
+    }
+    .name::before{
+        margin-right: 20px;
+    }
+    .name::after{
+        margin-left: 20px;
+    }
+    }

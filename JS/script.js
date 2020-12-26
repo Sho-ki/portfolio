@@ -14,19 +14,22 @@ $(document).ready(function() {
     });
     $('.owl-carousel').owlCarousel({
         loop:true,
-        items: 4,
         responsive:{
             0:{
-                items:1
+                items:1,
+                nav:true,
             },
             480:{
-                items:2
+                items:2,
+                nav:true,
             },
             768: {
-                item:3
+                item:3,
+                nav:true,
             },
             938:{
-                items:4
+                items:4,
+                nav:true,
             }
         },
         autoplay:true,
