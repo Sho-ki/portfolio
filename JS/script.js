@@ -1,3 +1,17 @@
+$(window).on('load', function() {
+    $('.loading .inner').fadeOut(500, function(){
+        $(".loading").fadeOut(750);
+    });
+    $(".items").isotope({
+        filter: "*",
+        animationOptions: {
+            duration: 1500,
+            easing: "linear",
+            queue: false
+        }
+    });
+})
+
 $(document).ready(function() {
     $('#slides').superslides({
         animation: 'fade',
@@ -6,7 +20,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Front End Developer", "22 years old", "Student."],
+        strings: ["Front End Developer", "23 years old", "Student."],
         typeSpeed: 70,
         loop: true,
         startDelay: 1500,
@@ -55,15 +69,6 @@ $(document).ready(function() {
     });
 
     $("[data-fancybox]").fancybox();
-
-    $(".items").isotope({
-        filter: "*",
-        animationOptions: {
-            duration: 1500,
-            easing: "linear",
-            queue: false
-        }
-    });
 
     $("#filters a").click(function(){
         $("#filters .current").removeClass("current");

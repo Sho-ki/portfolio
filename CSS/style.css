@@ -144,7 +144,7 @@ body {
     content: '';
     width: 60px;
     height: 5px;
-    background-color: #48aaff;
+    background-color: #ecda34;
 }
 #contact h2::before{ transform: rotate(50deg);}
 #contact h2::after{ transform: rotate(-50deg);}
@@ -222,7 +222,7 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: red;
+    background-color: #e64c37;
     position: relative;
 
     /* -webkit-transition: all 0.2s linear, 0.3s;
@@ -231,6 +231,11 @@ body {
     -ms-transition: all 0.2s linear, 0.3s; */
     transition: all 0.2s linear, 0.3s
 }
+
+.items a:hover {
+    filter: brightness(120%)
+}
+
 .items .imageOverlay {
     width: 100%;
     height: 100%;
@@ -319,6 +324,22 @@ body {
 
 .itemTitle {
     text-align: center;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    background: url(../img/loading.gif) center center no-repeat;
 }
 
 @media screen and (min-width: 1080px) {
