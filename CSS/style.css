@@ -76,6 +76,7 @@ body {
     border-radius: 25px;
     background-color: #d6c106;
     color: #ffffff;
+    border: none;
 }
 
 .aboutBtn:hover {
@@ -121,15 +122,15 @@ body {
 }
 
 #contact button {
-    width: 30%;
-    line-height: 40px;
-    font-size: bold;
+    width: 50%;
+    line-height: 60px;
+    border: none;
     margin-top: 3%;
     background-color: #d6c106;
     color: white;
     font-weight: bolder;
     font-size: 25px;
-    border-radius: 20px;
+    border-radius: 35px;
 }
 #contact button:hover{
     transform: translateY(2px);
@@ -273,12 +274,31 @@ body {
 .owl-prev {
     width: 30%;
     height: 100px;
+    outline: none!important;
+    border-radius: 10px;
+    font-size: 40px!important;
+}
+
+.owl-prev::after{
+    content: 'pre';
+    font-size: 12px;
+    display: block;
 }
 
 .owl-next {
     width: 30%;
     height: 100px;
+    outline: none!important;
+    border-radius: 10px;
+    font-size: 40px!important;
 }
+
+.owl-next::after{
+    content: 'next';
+    font-size: 12px;
+    display: block;
+}
+
 .owl-nav button {
     margin: 0 15px;
     text-align: center;
@@ -346,10 +366,10 @@ body {
     .myImage::before{
         content: '';
         position: absolute;
-        bottom: 30px;
-        right: 0px;
+        bottom: -20px;
+        right: -15px;
         width: 90%;
-        height: 80%;
+        height: 100%;
         background-image: 
             radial-gradient(#999 30%, transparent 31%),
             radial-gradient(#999 30%, transparent 31%);
@@ -357,6 +377,12 @@ body {
         background-position: 0 0, 3px 3px;
         z-index: -1;;
     }
+
+    .introduction {
+    position: relative;
+    right: -10px;
+    }
+    
     .name {
         display: flex;
         align-items: center;
@@ -374,6 +400,7 @@ body {
     .name::after{
         margin-left: 20px;
     }
+
     }
 
 @media screen and (max-width: 480px) {
@@ -399,13 +426,11 @@ body {
     #contact button {
         width: 80%;
         line-height: 30px;
-        font-size: bold;
         margin-top: 3%;
         background-color: #d6c106;
         color: #ffffff;
         font-weight: bolder;
         font-size: 20px;
-        border-radius: 20px;
         padding: 15px 30px;
     }
 }
